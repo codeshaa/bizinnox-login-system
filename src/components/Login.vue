@@ -5,7 +5,7 @@
     <v-card class="mx-auto pa-4" color="light-blue accent-1" max-width="600">
         <p class="text-h5 text-center">Login</p>
         <p v-if="error" class="text-caption font-weight-medium validation-error">{{error}}</p>
-        <v-form ref="form" v-model="valid" lazy-validation>
+        <v-form ref="form" lazy-validation>
                 <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
                 <v-text-field v-model="password" :rules="[rules.required, rules.min]" type="password" label="Password" hint="At least 8 characters" required></v-text-field>
 

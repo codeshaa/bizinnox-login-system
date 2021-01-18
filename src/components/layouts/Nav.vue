@@ -7,7 +7,7 @@
             <v-spacer></v-spacer>
             <router-link v-if="!user" to="/login"><v-btn text class="white--text">Login</v-btn></router-link>
             <router-link v-if="user" to="/"><v-btn text class="white--text">Home</v-btn></router-link>
-            <a href="javascript.void(0)" v-if="user" @click="logout"><v-btn text class="white--text">Logout</v-btn></a>
+            <a href="javascript:void(0)" v-if="user" @click="logout"><v-btn text class="white--text">Logout</v-btn></a>
         </v-app-bar>
     </nav>
 </template>
